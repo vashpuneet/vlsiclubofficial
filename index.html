@@ -116,7 +116,7 @@
         </ul>
       </nav><!-- .navbar -->
 
-      <a class="btn-book-a-table" href="#book-a-table">Register for Next Event</a>
+      <a class="btn-book-a-table" href="contact.html">Register for Next Event</a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
@@ -132,8 +132,8 @@
           <h3 data-aos="fade-up">Electronics & Communication Engineering</h3>
           <p data-aos="fade-up" data-aos-delay="100">A learner community where both young and experienced mindshare in a common goal of problem solving skills through science, technology and engineering to improve the modern world in which we live. </p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#contact" class="btn-book-a-table">Contact Us</a>
-            <a href="https://youtu.be/WhkiCZ7Xrc4" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="#book-a-table" class="btn-book-a-table">Contact Us</a>
+            <a href="https://youtu.be/Dj1fOvVBTuk" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
@@ -144,10 +144,6 @@
   </section><!-- End Hero Section -->
 
   <main id="main">
-    
-    <div class="alert alert-success" role="alert">
-  Our old website of VLSI Club still have some real content left. Check it out<a href="https://sites.google.com/view/vlsiclub/home" class="alert-link"> here!!</a>
-</div>
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -498,74 +494,7 @@
       </div>
     </section><!-- End Chefs Section -->
 
-    <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>Register for Next Event</h2>
-          <p>Registration <span>For</span> Next Event</p>
-        </div>
-
-        <div class="row g-0">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(image/vlsi.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-
-          <div class="container register">
-            <div class="row">
-                <div class="col-md-12">
-                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <h3 class="register-heading">Register with VLSI Club</h3>
-                            <div class="row register-form">
-                                <div class="col-md-12">
-                                    <form method="post" autocomplete="off" name="google-sheet">
-                                        <div class="form-group">
-                                            <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="number" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
-                                        </div>
-                                        <div class="form-group">
-                                          <input type="text" name="College" class="form-control" placeholder="Enter your College Name *" value="" required=""/>
-                                      </div>
-                                        <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Register" />
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-          
-          <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbylP1e_cUAepGpBcXqMcp4ip0Azb_vrMns-BY5h5LbimTB2UcKcDzDcqW2Mn6qpFK5F/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Registering with VLSI Club for next Event..! We will connect with you soon.."))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      </div>
-
-
-          
-
-        </div>
-
-      </div>
-    </section><!-- End Book A Table Section -->
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg">
@@ -650,10 +579,8 @@
             </div>
           </div><!-- End Info Item -->
 
-
-
-          <div class="container register">
-            <div class="row">
+            <div class="container register">
+              <div class="row">
                 <div class="col-md-12">
                         <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <h3 class="register-heading">Connect with VLSI Club</h3>
@@ -673,7 +600,7 @@
                                           <input type="text" name="Message" class="form-control" placeholder="Enter your Query *" value="" required=""/>
                                       </div>
                                         <div class="form-group">
-                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Register" />
                                         </div>
                                     </form>
                                 </div>
@@ -690,13 +617,14 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting VLSI Club..! We Will Contact You Soon..."))
+                .then(response => alert("Thanks for Registering with VLSI Club for next Event..! We will connect with you soon.."))
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
 
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      </div>
 
 
 
@@ -768,7 +696,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="www.spentarnexe.ml">Spentarn exe</a>
+        Designed by <a href="https:www.spentarnexe.ml">Spentarn exe</a>
       </div>
     </div>
 
